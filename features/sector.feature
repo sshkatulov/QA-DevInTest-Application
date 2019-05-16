@@ -6,7 +6,7 @@ Feature: Sector
   Scenario: Clicking sector and further
     When I click an option from sector list
     Then Page with relevant sector is opened
-    When I click a job from sector
+    When I click a job from list
     Then I should see the 'job description'
     And I should see the 'apply button'
     
