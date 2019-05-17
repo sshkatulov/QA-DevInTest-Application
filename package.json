@@ -7,11 +7,17 @@
     "chai": "^4.2.0",
     "chromedriver": "^2.46.0",
     "cucumber": "^5.1.0",
-    "selenium-webdriver": "^4.0.0-alpha.1"
+    "mocha-allure-reporter": "^1.4.0",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "sprintf-js": "^1.1.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  },
   "scripts": {
-    "test": "node node_modules/cucumber/bin/cucumber-js --fail-fast"
+    "test": "node node_modules/cucumber/bin/cucumber-js --fail-fast",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",

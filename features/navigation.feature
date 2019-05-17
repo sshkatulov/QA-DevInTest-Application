@@ -1,16 +1,16 @@
-Feature: Navigation bar
+# Feature: Navigation bar
 
-  Background: Landing to the home page
-    Given I go to the jobs page
+#   Background: Landing to the home page
+#     Given I go to the jobs page
 
-  Scenario Outline: Each of the links in the navigation bar is functional and goes to the correct page
-    When I click '<Item>'
-    Then '<Item>' page is opened
+#   Scenario Outline: Each of the links in the navigation bar is functional and goes to the correct page
+#     When I click '<Item>'
+#     Then '<Item>' page is opened
 
-  Examples:
-    | Item              |
-    | home              |
-    | find a job        |
-    | job alerts        |
-    | search recrutiers |
-    | jobs blog         |
+#   Examples:
+#     | Item              |
+#     | home              |
+#     | find a job        |
+#     | job alerts        |
+#     | search recrutiers |
+#     | jobs blog         |

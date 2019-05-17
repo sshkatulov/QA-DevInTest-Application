@@ -7,10 +7,10 @@ Feature: Home page
     Then I should see the '<Item>'
 
   Examples:
-    | Item           |
-    | navigation bar |
-    | search fields  |
-    | sector lists   |
-    | jobs blog      |
-    | featured jobs  |
-    | footer         |
+    | Item              |
+    | navigation bar    |
+    | search fields     |
+    | sector lists      |
+    | jobs blog article |
+    | featured jobs     |
+    | footer            |
