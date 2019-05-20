@@ -12,5 +12,5 @@ Feature: Navigation bar
     | home              |
     | find a job        |
     | job alerts        |
-    | search recrutiers |
+    | search recruiters |
     | jobs blog         |

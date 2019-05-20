@@ -19,12 +19,12 @@ When(/^I click an option from sector list$/, async () => {
 });
   
 /**
-   * Checks that page for relevand sector is opened
-   * This step performes the following actions:
-   * 1. gets an element with page title
-   * 2. gets page title form the element
-   * 3. checks page title equals to the sector title from World
-   */
+ * Checks that page for relevand sector is opened
+ * This step performes the following actions:
+ * 1. gets an element with page title
+ * 2. gets page title form the element
+ * 3. checks page title equals to the sector title from World
+ */
 Then(/^Page with relevant sector is opened$/, async () => {
   const element = await World.driver.findElement(selectors['browsing'].locator);
   const pageTitle = await element.getText();

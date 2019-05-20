@@ -16,4 +16,3 @@ Feature: Search
       | Profession    |
       | Contract Type |
       | Hours         |
-    

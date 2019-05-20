@@ -4,6 +4,7 @@ const home = require('./home');
 const footer = require('./footer');
 const jobs = require('./jobs');
 const authorization = require('./authorization');
+const pages = require('./pages');
 
 module.exports = {
   ...transformSelectors(navigationBar),
@@ -11,4 +12,5 @@ module.exports = {
   ...transformSelectors(footer),
   ...transformSelectors(jobs),
   ...transformSelectors(authorization),
+  ...transformSelectors(pages),
 };

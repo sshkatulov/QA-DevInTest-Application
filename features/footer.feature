@@ -14,3 +14,12 @@ Feature: Footer
     | term and conditions |
     | privacy policy      |
     | advertise with us   |
+
+  Scenario Outline: Ensuring '<Item>' social icon in the footer has valid link
+    Then '<Item>' has valid link
+
+  Examples:
+    | Item     |
+    | facebook |
+    | twitter  |
+    | linkedin |

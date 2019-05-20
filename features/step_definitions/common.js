@@ -33,11 +33,20 @@ When(/^I click '(.*)'$/, async (item) => {
 /**
  * Checks if a page is opened
  * @param {string} item page's name to check
- * This step performes the following actions:
- * 1. gets current page url
- * 2. checks that actual url is same as the expected one
+ * @returns {WebElement} found element
  */
 Then(/^'(.*)' page is opened$/, async (item) => {
-  const currentUrl = await World.driver.getCurrentUrl();
-  assert.equal(currentUrl, urls[item], `${item} page should be opened`);
+  return World.driver.findElement(selectors[`${item} page`].locator);
+});
+
+/**
+ * Checks href attribute of an element
+ * @param {string} item element's name to check
+ * This step performes the following actions:
+ * 1. finds an element
+ * 2. checks that actual url is same as the expected one
+ */
+Then(/^'(.*)' has valid link$/, async (item) => {
+  const link = World.driver.findElement(selectors[item].locator);
+  assert.equal(await link.getAttribute('href'), urls[item], `${item} link should be valid`);
 });

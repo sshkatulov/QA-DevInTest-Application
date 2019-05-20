@@ -2,10 +2,10 @@ const { By } = require('selenium-webdriver');
 const { sprintf } = require('sprintf-js');
 
 /**
-   * Add to each selector its name and locator
-   * @param {Object} selectors object with selectors in properties
-   * @returns {*} modified selectors
-   */
+ * Add to each selector its name and locator
+ * @param {Object} selectors object with selectors in properties
+ * @returns {*} modified selectors
+ */
 function transformSelectors(selectors) {
   Object.keys(selectors).forEach((key) => {
     const selector = selectors[key];
@@ -16,11 +16,11 @@ function transformSelectors(selectors) {
 }
 
 /**
-     * Insert values into locator template
-     * @param {object} selector element selector
-     * @param {*} params values for insert
-     * @returns {object} updated selector
-     */
+ * Insert values into locator template
+ * @param {object} selector element selector
+ * @param {*} params values for insert
+ * @returns {object} updated selector
+ */
 function fromPattern(selector, ...params) {
   const selectorHere = JSON.parse(JSON.stringify(selector));
   selectorHere.selector = sprintf(selectorHere.selector, ...params);
@@ -32,4 +32,3 @@ module.exports = {
   transformSelectors,
   fromPattern,
 };
-  

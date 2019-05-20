@@ -26,7 +26,7 @@ module.exports = {
     selector: `${primaryNav}${item}jbe`,
     type: 'className',
   },
-  'search recrutiers': {
+  'search recruiters': {
     selector: `${primaryNav}${item}recruiters`,
     type: 'className',
   },
